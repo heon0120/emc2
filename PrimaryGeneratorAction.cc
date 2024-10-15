@@ -9,6 +9,7 @@ PrimaryGeneratorAction::PrimaryGeneratorAction() {
     fParticleGun->SetParticlePosition(G4ThreeVector(0, 0, -1 * m));
 }
 
+
 void PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent) {
     fParticleGun->GeneratePrimaryVertex(anEvent);
 }
